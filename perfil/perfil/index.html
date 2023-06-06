@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Aqui está o link do css-->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/perfil.css" />
+
+    <!--Aqui está o link das fontes, mas todas são Roboto, em todo o site! -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Aqui está o link do Favicon-->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+
+    <!--Aqui está o link da lupa-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Universo Startup</title>
+  </head>
+
+  <!--Aqui começa o Menu, não mexer!-->
+
+  <body>
+  </head>
+  <body>
+      <nav>
+          <ul class="menu-container">
+            <img src="/img/logoprojeto.png" class="logo" />
+    
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SOBRE</a></li>
+            <li><a href="#">ECOSSISTEMA</a></li>
+            <li><a href="#">EVENTOS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">LOGIN</a></li>
+    
+            <li>
+              <form class="lupa" action="action_page.php">
+                <input type="text" placeholder="Procurar..." name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+    
+            <button class="botao">FAÇA PARTE</button>
+          </ul>
+        </nav>
+
+
+    <!--Aqui começa o corpo da página! Colocar o seu trabalho aqui!-->
+
+    <section class="conteudo">
+      <!--Esta section vai começar desde atrás do menu-cabeçalho, portando, deve-se colocar pra baixo no CSS, a menos que seja foto, que deve começar detrás mesmo-->
+      <h1 id="perfil-title">Meu <span>Perfil</span></h1>
+
+      <form id="form-perfil">
+        <div id="perfil-container">
+          <ul id="perfil-nav">
+            <li><button class="botao">< ECOSSISTEMA</button></li>
+            <li class="box-login">
+              <button class="botao">ALTERAR SENHA</button>
+              <div class="overlay">
+                <div class="content">
+                  Um novo login/senha será enviado por e-mail e você terá que se
+                  reconectar.
+                  <br /><br />
+                  Deseja continuar?
+                </div>
+                <div class="footer">
+                  <button class="ok">OK</button>
+                  <button>CANCELAR</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <select name="categoria">
+                <option value="unset" selected>Escolha uma categoria</option>
+                <option value="startup">Startup</option>
+                <option value="Parceiro">Parceiro</option>
+                <option value="Investidor">Investidor</option>
+                <option value="Mentor">Mentor</option>
+                <option value="Acerelador">Acerelador</option>
+                <option value="Aluno">Aluno</option>
+                <option value="Interessado">Interessado</option>
+              </select>
+              <span class="mesagem-de-erro" id="msg-error-categoria">
+                ⚠️ Selecione o campo categoria!
+              </span>
+            </li>
+            <li>
+              <select name="area">
+                <option value="unset" selected>Escolha uma área</option>
+                <option value="Agricultura">Agricultura</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Direito">Direito</option>
+                <option value="Educação">Educação</option>
+                <option value="Esporte">Esporte</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Governo">Governo</option>
+                <option value="Recursos Humanos">Recursos Humanos</option>
+                <option value="Saúde">Saúde</option>
+              </select>
+              <span class="mesagem-de-erro" id="msg-error-area">
+                ⚠️ Selecione o campo área!
+              </span>
+            </li>
+          </ul>
+
+          <div id="dados-container" class="outline">
+            <div id="registrar-foto-perfil">
+              <h2 class="nome">EU</h2>
+              <div class="foto">
+                <img src="" class="preview-avatar-src" />
+                <button
+                  type="button"
+                  onclick="clearAvatarPreview()"
+                  class="avatar-close"
+                >
+                  X
+                </button>
+              </div>
+              <label for="image-avatar" class="button-upload-avatar"
+                >COLOQUE SUA FOTO AQUI</label
+              >
+              <input
+                type="file"
+                id="image-avatar"
+                name="image-avatar"
+                accept=".jpg, .jpeg, .png"
+              />
+              <span class="mesagem-de-erro" id="msg-error-foto">
+                ⚠️ Coloque uma foto!
+              </span>
+            </div>
+
+            <div id="dados-form">
+              <input type="text" name="nome" placeholder="Nome..." />
+              <span class="mesagem-de-erro" id="msg-error-nome">
+                ⚠️ Preencha o campo nome!
+              </span>
+              <textarea
+                name="descricao"
+                placeholder="Descrição...&#10;(até 200 caracteres)&#10;&#10;&#10;#Startup #Agricultura                    
+                    "
+                maxlength="200"
+              ></textarea>
+              <span class="mesagem-de-erro" id="msg-error-descricao">
+                ⚠️ Preencha o campo descrição!
+              </span>
+            </div>
+
+            <div class="button-div">
+              <button class="botao">LISTA DE FAVORITAS</button>
+              <button class="mensagem-button">CAIXA DE MENSAGENS</button>
+            </div>
+          </div>
+
+          <div id="post-container" class="outline">
+            <h2>POST</h2>
+            <textarea
+              type="text"
+              name="post"
+              placeholder="Escreva seu post...&#10;(até 300 caracteres)"
+              maxlength="300"
+            ></textarea>
+            <span class="mesagem-de-erro" id="msg-error-post"> </span>
+            <div class="outline upload-image">
+              <label for="image_uploads" class="button-upload">
+                <div class="botao">UPLOAD IMAGEM</div>
+              </label>
+              <input
+                type="file"
+                id="image_uploads"
+                name="image_uploads"
+                accept=".jpg, .jpeg, .png"
+              />
+
+              <div class="preview-image">
+                <button
+                  onclick="clearImagePreview()"
+                  class="close"
+                  type="button"
+                >
+                  X
+                </button>
+                <img src="" alt="preview" class="preview-image-src" />
+              </div>
+            </div>
+            <div class="comentario-div">
+              <input
+                type="text"
+                name="comentario-input"
+                placeholder="Deixe seu comentário..."
+              />
+              <button
+                type="button"
+                onclick="limparCampo('[name=comentario-input]')"
+              >
+                <img src="../img/cancelar.svg" alt="cancekar post" />
+              </button>
+            </div>
+          </div>
+
+          <div id="oportunidade-container" class="outline">
+            <h2>OPORTUNIDADE</h2>
+            <textarea
+              type="text"
+              name="oportunidade-input"
+              placeholder="Escreva aqui a sua oportunidade...&#10;(até 300 caracteres)"
+              maxlength="300"
+            ></textarea>
+            <span class="mesagem-de-erro" id="msg-error-oportunidade"> </span>
+            <input
+              type="text"
+              name="oportunidade-link"
+              placeholder="Coloque o link da oportunidade..."
+            />
+            <span class="mesagem-de-erro" id="msg-error-link-oportunidade">
+            </span>
+          </div>
+        </div>
+
+        <button id="publicar-perfil" class="botao">PUBLICAR PERFIL</button>
+      </form>
+    </section>
+
+    <div class="modal-feedback">
+      <div class="content">
+        <div class="header">
+          <h2 class="modal-feedback-text">Perfil publicado com sucesso!</h2>
+
+          <div class="body">
+            <button class="botao" onclick="closeModal()">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Aqui termina o corpo da página e começa o rodapé! Não mexer!-->
+
+    <footer class="rodape">
+        <img src="/img/logoprojeto.png" class="logo-rodape" />
+    
+        <div class="contact-us">
+          <h3 style="color: #4dff4d">ENTRE EM CONTATO CONOSCO</h3>
+          <p>
+            <span class="material-symbols-outlined">home</span>&nbsp; Av. Tancredo
+            Neves, 1109 -
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+          <p>Salvador - BA, CEP 41820-021</p>
+          <br />
+          <p>
+            <span class="material-symbols-outlined">call</span>&nbsp; (71) 3273-9852
+            (Tel. & Whats-App)
+          </p>
+          <br />
+          <p>
+            <span class="material-symbols-outlined">mail</span>&nbsp;
+            universo@universostartup.com.br
+          </p>
+          <br />
+    
+          <h4>SIGA NAS REDES SOCIAIS</h4>
+          <br />
+          <a href=""> <img src="/img/facebook.png" class="face-icon" /></a>
+          <a href=""> <img src="/img/instagram.png" class="face-icon" /></a>
+          <a href=""> <img src="/img/linkedin.png" class="face-icon" /></a>
+          <br /><br />
+          <p>&reg; 2023 - Todos os direitos reservados.</p>
+        </div>
+    
+        <div class="clients">
+          <h4>NOSSO CLIENTE:</h4>
+          <br />
+          <img src="https://www.ead.senac.br/public/assets/img/logo-white.png" />
+        </div>
+      </footer>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,508 @@
+.conteudo {
+  padding-top: 234px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.outline {
+  border: 1px dashed #585858;
+  border-radius: 40px;
+}
+
+h1#perfil-title {
+  width: calc(90vw - 15px);
+  padding: 30px 0 30px 30vw;
+  margin-left: 10vw;
+
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 60px;
+
+  background-color: #894cb3;
+  color: white;
+
+  border-radius: 40px 0 0 40px;
+}
+
+h1#perfil-title span {
+  color: #4dff4d;
+}
+
+h2 {
+  color: #b38136;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+
+  margin-bottom: 10px;
+}
+
+#perfil-container {
+  background-color: #d9d9d9;
+  border-radius: 40px;
+
+  max-width: 1010px;
+  padding: 34px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 44px;
+}
+
+#perfil-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 26px;
+  align-items: center;
+
+  max-width: 928px;
+}
+
+#perfil-nav li {
+  list-style: none;
+  font-size: 20px;
+}
+
+#perfil-nav li button {
+  margin: 0;
+  width: 180px;
+}
+
+#perfil-nav li select {
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  height: 50px;
+  width: 245px;
+  padding: 12px;
+
+  padding-right: 20px;
+}
+
+#dados-container {
+  display: flex;
+  gap: 38px;
+
+  padding: 30px 90px 44px 90px;
+}
+
+#registrar-foto-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+#registrar-foto-perfil h2 {
+  margin: 0;
+}
+
+#registrar-foto-perfil .foto {
+  height: 200px;
+  width: 200px;
+
+  background-color: white;
+  border: 1px solid #8936b3;
+
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+#registrar-foto-perfil button {
+  border: transparent;
+  background-color: transparent;
+  color: #8936b3;
+  font-size: 12px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+#registrar-foto-perfil button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-upload-avatar{
+  color: #8936b3;
+  margin-top: 1em;
+}
+
+#dados-form input {
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  height: 50px;
+  width: 245px;
+  padding: 12px;
+
+  margin-top: 40px;
+}
+
+#dados-form textarea[name="descricao"] {
+  height: 152px;
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  height: 150px;
+  width: 245px;
+  padding: 20px 14px;
+  margin-top: 36px;
+
+  resize: none;
+  overflow: hidden;
+}
+
+.button-div button:nth-child(1) {
+  height: 50px;
+  width: 180px;
+  margin: 40px 0 0 0;
+}
+
+.button-div button:nth-child(2) {
+  color: white;
+  background-color: #4dff4d;
+  width: 180px;
+  height: 152px;
+  border: none;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 800;
+
+  margin-top: 30px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-div button:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #ffb84d;
+}
+
+#post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 927px;
+}
+
+#post-container textarea[name="post"] {
+  width: 500px;
+  height: 150px;
+
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+
+  padding: 46px;
+}
+
+#post-container .outline {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 46px;
+}
+
+.comentario-div {
+  position: relative;
+  z-index: 1;
+}
+
+.comentario-div input {
+  width: 500px;
+  height: 50px;
+
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: #ffffff;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  margin-top: 37px;
+  padding-left: 46px;
+}
+
+.comentario-div button {
+  position: absolute;
+  top: 46px;
+  right: 10px;
+
+  height: 30px;
+  width: 30px;
+
+  border: transparent;
+  background: none;
+}
+
+.comentario-div button:hover {
+  cursor: pointer;
+}
+
+#oportunidade-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 927px;
+}
+
+#oportunidade-container textarea[name="oportunidade-input"] {
+  width: 500px;
+  height: 150px;
+
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  padding: 46px;
+}
+
+#oportunidade-container input[name="oportunidade-link"] {
+  width: 500px;
+  height: 50px;
+
+  font-size: 18px;
+  font-weight: 300;
+
+  color: #585858;
+  background-color: white;
+  border: 1px solid #8936b3;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+
+  margin-top: 37px;
+  padding-left: 46px;
+}
+
+#publicar-perfil {
+  display: block;
+  width: 180px;
+  min-height: 50px;
+  margin: 0;
+}
+
+** box login **/
+
+.box-login {
+  position: relative;
+  z-index: 1;
+}
+
+.box-login:hover .overlay {
+  display: flex;
+}
+
+.box-login .overlay {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  color: #585858;
+  width: 100%;
+  border: 1px solid #8936b3;
+  display: none;
+}
+
+.box-login .content {
+  padding: 15px;
+}
+
+.box-login .footer {
+  display: flex;
+}
+
+.box-login .footer button {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid #8936b3;
+  color: #585858;
+  font-size: 11px;
+}
+.box-login .footer .ok {
+  border-right: 1px solid #8936b3;
+  font-size: 18px;
+}
+
+/* upload de imagem */
+
+.upload-image input {
+  display: none;
+}
+
+.upload-image .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.preview-image .close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #f77575;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b93030;
+  cursor: pointer;
+}
+.preview-image .close:hover {
+  background: #b93030;
+  color: #f77575;
+}
+
+.preview-image .preview-image-src {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: white;
+  border-radius: 40px;
+}
+
+/* upload de avatar */
+
+.preview-avatar-src {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto .avatar-close {
+  position: absolute;
+  bottom: 5px;
+  left: 85px;
+  background: #f77575 !important;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b93030;
+}
+
+#form-perfil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mesagem-de-erro {
+  color: #b93030;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+/** Modal  **/
+
+.modal-feedback {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #8936b3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-feedback .content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #8936b3;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.modal-feedback h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8936b3;
+}
+
+.modal-feedback .body {
+  text-align: center;
+}
+
+.modal-feedback button {
+  margin: 0;
+  display: inline-block;
+}

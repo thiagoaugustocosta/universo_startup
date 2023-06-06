@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+<!--Aqui está o link do css-->
+
+    <link rel="stylesheet" 
+    href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/ecossistema-logado.css">
+
+<!--Aqui está o link das fontes, mas todas são Roboto, em todo o site! -->
+
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" 
+    href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+    href="https://fonts.gstatic.com" 
+    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap" 
+    rel="stylesheet">
+
+<!--Aqui está o link do Favicon-->
+
+<link rel="icon" type="image/png" 
+sizes="16x16" href="../img/favicon-16x16.png">
+
+<!--Aqui está o link de Google Icons-->
+
+<link rel="stylesheet" 
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<link rel="stylesheet" 
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!--Aqui está o link da lupa-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Universo Startup</title>
+</head>
+
+<!--Aqui começa o Menu, não mexer!-->
+
+</head>
+<body>
+    <nav>
+        <ul class="menu-container">
+          <img src="/img/logoprojeto.png" class="logo" />
+  
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">ECOSSISTEMA</a></li>
+          <li><a href="#">EVENTOS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">LOGIN</a></li>
+  
+          <li>
+            <form class="lupa" action="action_page.php">
+              <input type="text" placeholder="Procurar..." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </li>
+  
+          <button class="botao">FAÇA PARTE</button>
+        </ul>
+      </nav>
+
+
+<!--Aqui começa o corpo da página! Colocar o seu trabalho aqui!-->
+
+    <section class="conteudo"> <!--Esta section vai começar desde atrás do menu-cabeçalho,
+        portando, deve-se colocar pra baixo no CSS, a menos que seja foto, que deve começar detrás mesmo-->
+        
+        <nav class="barra-comandos">
+            
+            <button class="botao">MEU PERFIL</button>
+            
+            <ul class="menu-dropdown01">
+
+                <li>
+                    <select name="categoria">
+                      <option value="unset" selected>Escolha a categoria...</option>
+                      <option value="startup">Startup</option>
+                      <option value="Parceiro">Parceiro</option>
+                      <option value="Investidor">Investidor</option>
+                      <option value="Mentor">Mentor</option>
+                      <option value="Acerelador">Acerelador</option>
+                      <option value="Aluno">Aluno</option>
+                      <option value="Interessado">Interessado</option>
+                    </select>
+                </li>
+      
+            </ul>
+
+            <ul class="menu-dropdown02">
+
+                <li>
+                    <select name="area">
+                      <option value="unset" selected>Escolha uma área...</option>
+                      <option value="Agricultura">Agricultura</option>
+                      <option value="Alimentação">Alimentação</option>
+                      <option value="Direito">Direito</option>
+                      <option value="Educação">Educação</option>
+                      <option value="Esporte">Esporte</option>
+                      <option value="Financeiro">Financeiro</option>
+                      <option value="Governo">Governo</option>
+                      <option value="Recursos Humanos">Recursos Humanos</option>
+                      <option value="Saúde">Saúde</option>
+                    </select>
+                </li>
+      
+            </ul>
+
+            <ul class="menu-dropdown03">
+
+                <li>
+                    <select name="fav-cur">
+                        <option value="unset" selected>Separar por...</option>
+                        <option value="fav" selected>Mais favoritadas</option>
+                        <option value="unset" selected>Mais curtidas</option>
+                    </select>
+                </li>
+                
+            </ul>
+        </nav>
+
+    </section>
+    <section>
+
+        <nav>
+            <div id="retangulo01">
+                
+                <img src="/img/foto-startup.png" 
+                    alt="Foto Startup" 
+                    class="circle-image">
+                
+                <div class="perfil">
+                    <h2>STARTUP SLAC</h2><br>
+                    <p>Somos a Slac, soluções para dinamizar 
+                        o registro de suas atividades esportivas. 
+                        Não somos somente uma contadora de atividades, 
+                        mas também a inovação em divulgação de aulas 
+                        esportivas que a sua empresa precisa! 
+                        Contate-nos agora! <br><br>
+    
+                        #STARTUP #ESPORTE</p>
+                </div>
+
+                <div class="fav-cur">
+                    <p>Favoritar</p>
+                    <p class="espaco">Curtir</p>
+                </div>
+
+                <div class="est-cor">
+
+                    <img src="/img/estrelinha.png" 
+                        id="estrelinha">
+                    
+                    <img src="/img/coracaozinho.png" 
+                        id="coracaozinho">
+                </div>
+
+                <div class="numeros">
+                    <p>1</p>
+                    <p class="espaco2">2</p>
+
+                </div>
+
+                <button class="botao" id="bt-mensagem">MENSAGEM</button>
+
+            </div>
+        </nav>
+
+    </section>
+    <section>
+
+        <nav>
+            <div id="retangulo02">
+                           
+                <div class="post">
+                    <h3>O QUE É UM PROGRAMA DE ACELERAÇÃO TECNOLÓGICA?</h3><br>
+                    <p>O programa de aceleração tecnológica de startups funciona como um investimento. 
+                        Nesse sentido, são criadas empresas com o único objetivo de ajudar novos negócios 
+                        a crescerem no mercado da tecnologia. Para isso, as aceleradoras fazem um acompanhamento 
+                        da startup e buscam sanar as demandas da empresa. Veja mais em: 
+                        https://www.remessaonline.com.br/blog/programa-de-aceleracao-de-startups/</p><br>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDE2fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY3NjE2NzI2Mg&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450" 
+                alt="Foto Post" 
+                class="image-post">
+
+                <form action="">
+
+                    <input type="text" 
+                    id="comentario" 
+                    name="comentario" 
+                    placeholder="   Escreva um comentário..."><br><br>
+                    
+                    <input type="submit" 
+                    id="bt-enviar-com" 
+                    style="color: white;">
+
+                    <input type="reset" 
+                    id="bt-reset-com"
+                    style="color: white;">
+
+                </form>
+            </div>
+
+            <div id="retangulo03">
+                           
+                <div class="oportunidade">
+                    <h2>OPORTUNIDADE</h2><br>
+                    <p>Vaga para Programador Full Stack Júnior.
+                        Atividades: Desenvolver e corrigir códigos para softwares e aplicativos ANDROID.
+                        Requisitos: Certificado de Programador Full Stack (mín. 388h), Ensino Médio Completo, 
+                        Proficiência em Inglês Básico, Pacote Office, Windows e Internet.
+                        Salário: R$ 5.000,00</p><br>
+                </div>
+
+                <button class="botao" id="bt-candidate">CANDIDATE-SE</button>
+
+            </div>
+
+        </nav>
+
+    </section>
+    <section>
+
+        <nav>
+            <div id="retangulo04">
+                
+                <img src="https://logos.mybrandnewlogo.com/cached/logos/Rmj7Zn0ymkIxY4PY3xqQ/images/logo-m54yqQN0DDsyqgjqk8mMfgAPEkX0.png" 
+                    alt="Foto Startup" 
+                    class="circle-image">
+                
+                <div class="perfil">
+                    <h2>ACELERADORA SKY ROCKET</h2><br>
+                    <p>Somos a Sky Rocket. Aqui você encontra soluções para acelerar a sua Startup. 
+                        Somos também a mentoria para a aceleração de negócios que a sua empresa precisa! 
+                        Contate-nos agora!<br><br>
+    
+                        #ACELERADOR #EDUCAÇÃO</p>
+                </div>
+
+                <div class="fav-cur">
+                    <p>Favoritar</p>
+                    <p class="espaco">Curtir</p>
+                </div>
+
+                <div class="est-cor">
+
+                    <img src="/img/estrelinha.png" 
+                        id="estrelinha">
+                    
+                    <img src="/img/coracaozinho.png" 
+                        id="coracaozinho">
+                </div>
+
+                <div class="numeros">
+                    <p>1</p>
+                    <p class="espaco2">2</p>
+
+                </div>
+
+                <button class="botao" id="bt-mensagem">MENSAGEM</button>
+
+                <button class="botao" id="bt-reserva">RESERVAR SALA</button>
+
+            </div>
+        </nav>
+
+    </section>
+    
+<!--Aqui termina o corpo da página e começa o rodapé! Não mexer!-->
+
+    <footer class="rodape">
+        <img src="/img/logoprojeto.png" class="logo-rodape" />
+    
+        <div class="contact-us">
+          <h3 style="color: #4dff4d">ENTRE EM CONTATO CONOSCO</h3>
+          <p>
+            <span class="material-symbols-outlined">home</span>&nbsp; Av. Tancredo
+            Neves, 1109 -
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+          <p>Salvador - BA, CEP 41820-021</p>
+          <br />
+          <p>
+            <span class="material-symbols-outlined">call</span>&nbsp; (71) 3273-9852
+            (Tel. & Whats-App)
+          </p>
+          <br />
+          <p>
+            <span class="material-symbols-outlined">mail</span>&nbsp;
+            universo@universostartup.com.br
+          </p>
+          <br />
+    
+          <h4>SIGA NAS REDES SOCIAIS</h4>
+          <br />
+          <a href=""> <img src="/img/facebook.png" class="face-icon" /></a>
+          <a href=""> <img src="/img/instagram.png" class="face-icon" /></a>
+          <a href=""> <img src="/img/linkedin.png" class="face-icon" /></a>
+          <br /><br />
+          <p>&reg; 2023 - Todos os direitos reservados.</p>
+        </div>
+    
+        <div class="clients">
+          <h4>NOSSO CLIENTE:</h4>
+          <br />
+          <img src="https://www.ead.senac.br/public/assets/img/logo-white.png" />
+        </div>
+      </footer>
+</body>
+</html>                                  
